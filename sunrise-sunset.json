@@ -1,0 +1,10 @@
+{
+	"event": "check_sunrise",
+	"url": "http://api.sunrise-sunset.org/json?lat=32.1922&lng=-83.7752&date=today",
+	"requestType": "GET",
+	"headers": {
+		"Content-Type": "application/json"
+		},
+	"responseTemplate": "{{#results}}{{sunrise}}~{{sunset}}{{/results}}",
+	"mydevices": true
+}
